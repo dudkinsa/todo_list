@@ -11,16 +11,21 @@ function App() {
       status: true,
     },
     {
-      id: 1,
-      title: 'first todo',
+      id: 2,
+      title: 'second todo',
       status: true,
+    },
+    {
+      id: 3,
+      title: ' third todo',
+      status: false,
     },
   ]);
   return (
     <>
       <Header />
       <AddTodo />
-      <TodoList />
+      <TodoList todo ={todo} setTodo = {setTodo}/>
     </>
   );
 }

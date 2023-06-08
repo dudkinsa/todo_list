@@ -2,7 +2,7 @@ import React from 'react'
 
 function AddTodo() {
   return (
-    <div>AddTodo</div>
+    <div>Form</div>
   )
 }
 

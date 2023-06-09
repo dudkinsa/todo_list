@@ -17,7 +17,6 @@ function TodoList({todo, setTodo}) {
     setTodo(newTodo);
   }
 
-  console.log(todo);
 
   return (
    todo.map((item) => (

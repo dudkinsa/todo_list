@@ -13,7 +13,7 @@ function AddTodo({todo, setTodo}) {
   const saveTodo = () => {
     setTodo(
       [...todo, {
-        id: 4,
+        id: id(),
         title: value,
         status: true
       }]

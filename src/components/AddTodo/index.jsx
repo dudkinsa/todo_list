@@ -6,7 +6,7 @@ function AddTodo({todo, setTodo}) {
   const [value, setValue] = React.useState('');
 
   const id = () => {
-    uuid()
+   return uuid()
   }
 
 
@@ -18,6 +18,7 @@ function AddTodo({todo, setTodo}) {
         status: true
       }]
     )
+    setValue('');
   }
 
   return <>

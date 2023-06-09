@@ -7,11 +7,24 @@ function TodoList({todo, setTodo}) {
   setTodo(newTodo)
   }
 
+  const statusTodo = (id) => {
+    let newTodo = [...todo].filter(item => {
+      if(item.id === id){
+        item.status = !item.status
+      }
+      return item;
+    })
+    setTodo(newTodo);
+  }
+
+  console.log(todo);
+
   return (
    todo.map((item) => (
   <div key={item.id}>
     <div>{item.title}</div>
     <button onClick={() =>  deleteTodo(item.id)}>Удалить</button>
+    <button onClick={() =>  statusTodo(item.id)}>Закрыть</button>
   </div>
     
    ))
